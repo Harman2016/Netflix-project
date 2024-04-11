@@ -28,13 +28,15 @@ export default function Cardcode2() {
                                     height: "20%",
                                 }}
                             >
+                                <Col sm={2}>
                                 <img
                                     style={{ width: "75px", height: "80%" }}
                                     src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
                                 ></img>
-                                <Col style={{marginTop:"4px"}}>
-                                    <h6 className="mt-4" style={{ marginLeft: "-5px",fontWeight: "bold", fontSize: "17px" }}>Stranger Things</h6>
-                                    <h6 className="text-primary" style={{ marginLeft: "-7px",fontSize: "17px" }}> Downloading....</h6>
+                                </Col>
+                                <Col>
+                                    <h6 className="mt-4" style={{ padding:"0", margin: "0" }}>Stranger Things</h6>
+                                    <h6 className="text-primary" > Downloading....</h6>
                                 </Col>
                                 <Col style={{margin:"0",padding:"0"}}>
                                     <img

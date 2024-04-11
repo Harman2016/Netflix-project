@@ -1,37 +1,23 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import style from "./CardCss.module.css";
 import{Col,Row} from "react-bootstrap";
 export default function Cardcode() {
   return (
-    <>
-    <div style={{backgroundColor:"black",color:"white"}}className="card" >
-    <Row className="p-4">
-      <Col className="pt-5">
-      <h1 style={{marginLeft:"100px",marginTop:"20px"}}> Enjoy on Your TV</h1>
-      <p className="pt-4" style={{marginLeft:"100px"}}>
-        {""}
-         Watch on smart TVs, PlayStation, Xbox,
-        Chromecast, Apple TV, Blu-ray players and more.{""}
-        </p>
-        </Col>
-        <Col
-        style={{
-          display:"flex",
-          alignContent:"right",
-          justifyContent:"right",
-      }}
-        >
-        <img 
-        className="p-0"
-        height={403}
-        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"/>
-        <video style={{width:390}}
-        autoPlay
-        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"/>
+    
+    <div  className="card"style={{backgroundColor:"black",color:"white"}} >
+    <div className="card-body">
+    <Row style={{height:"70vh"}}>
+    <Col style={{marginTop:"10%"}}>  <center>
+                 <div style={{fontSize:"50px", fontWeight:"bolder"}}>Enjoy on your TV</div></center>
+                <h4 style={{marginLeft:"23%" , marginTop:"10px"}}>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h4>
+                </Col>
+                <Col style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                  <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"/>
+        
+      <video style={{position:"absolute",marginBottom:"90px",height:"36vh",marginRight:"100px"}} autoPlay loop playsInline muted src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"></video>
+
 </Col>
 </Row>
 </div>
-</>
-      );
+</div>
+ );
  }
